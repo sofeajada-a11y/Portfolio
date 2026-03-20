@@ -1,102 +1,218 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OjiCreations by Jady</title>
-    <link rel="stylesheet" href="style.css">
+    <title>OjiCreations By Jady</title>
+    <style>
+        /* --- 1. BASE THEME --- */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #fce4ec; /* Soft pastel pink */
+            color: #333;
+        }
+
+        /* --- 2. NAVIGATION & LOGO --- */
+        .menu {
+            background-color: #ffffff;
+            padding: 20px 0 0 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .menu .logo img {
+            height: 250px; /* Adjusted for better flow */
+            width: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        ul.topnav {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #d54ac3; /* Deep Pink */
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        ul.topnav li a:hover {
+            background-color: #f06292;
+        }
+
+        /* --- 3. BRAND HEADER --- */
+        .blocks-header { 
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #fff1f6, #fce4ec);
+        }
+
+        .blocks-header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            color: #2c3e50;
+            letter-spacing: 2px;
+        }
+
+        .blocks-header p {
+            font-style: italic;
+            color: #ad1457;
+        }
+
+        /* --- 4. PRODUCT GRID --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-block {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-block:hover {
+            transform: translateY(-10px);
+        }
+
+        .block-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 4px solid #d4af37; /* Gold accent */
+        }
+
+        .block-content {
+            padding: 25px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .price-tag {
+            font-weight: bold;
+            color: #d81b60;
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        /* --- 5. BUTTONS & FOOTER --- */
+        .btn-order {
+            margin-top: auto;
+            padding: 12px 25px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-order:hover {
+            background: #d4af37; /* Gold */
+        }
+
+        footer {
+            text-align: center; 
+            padding: 60px 20px; 
+            color: #ad1457;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="top-bar">Jady / Art</div>
-        <h1>OJICREATIONS BY JADY</h1>
-        <div class="logo-box">
-            <img src="logo.png" alt="OjiCreations Logo" class="main-logo">
+    <nav class="menu">
+        <div class="logo">
+            <img src="ojicreations_logo png.png" alt="OjiCreations Logo">
         </div>
+        <ul class="topnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Supplies & Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="blocks-header">
+        <h1>OjiCreations By Jady</h1>
+        <p>Hand-crafted elegance from Thunder Bay.</p>
     </header>
 
     <main>
-        <section class="bio-section">
-            <div class="flex-container">
-                <img src="profile1.jpg" alt="Jady" class="bio-photo">
-                <div class="bio-text">
-                    <p>I love creating pieces such as beaded earrings, beaded lanyards, and keychains. Beaded medallions, caps/hats, and much more. Anything that involves beads, I love and cherish.</p>
+        <div class="services-grid">
+            
+            <div class="service-block">
+                <img src="pink earrings.jpeg" alt="Beaded Earrings" class="block-img">
+                <div class="block-content">
+                    <h3>Custom Earrings</h3>
+                    <p>Fringe, studs, or hoops. Personalized with your choice of colors and patterns.</p>
+                    <span class="price-tag">Starting at $45</span>
+                    <a href="contact.html" class="btn-order">Inquire Now</a>
                 </div>
             </div>
-        </section>
 
-        <section class="art-intro">
-            <h2>THE ART THAT I DO</h2>
-            <img src="beadwork1.jpg" alt="Beaded Work Display" class="hero-image">
-        </section>
-
-        <section class="credentials">
-            <div class="flex-container reverse">
-                <div class="cred-text">
-                    <h3>MY CREDENTIALS</h3>
-                    <ul>
-                        <li>Beaded for 4 years: 2020-2024</li>
-                        <li>Attended the Indigenous Beading Training in 2021-2022</li>
-                    </ul>
-                </div>
-                <img src="beadwork2.jpg" alt="Credential Work" class="cred-photo">
-            </div>
-        </section>
-
-        <section class="gallery">
-            <h3>MY PAST PROJECTS</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="p1.jpg" alt="Beaded Turtle">
-                    <p>Beaded Turtle</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="p2.jpg" alt="Strawberry Keychain">
-                    <p>Strawberry Keychain</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="p3.jpg" alt="Hello Kitty Earrings">
-                    <p>Hello Kitty Earrings</p>
+            <div class="service-block">
+                <img src="lanyard keychain.jpeg" alt="Beaded Lanyard" class="block-img">
+                <div class="block-content">
+                    <h3>Beaded Lanyards</h3>
+                    <p>Functional art for everyday use. Durable enough for keys and badges.</p>
+                    <span class="price-tag">Starting at $60</span>
+                    <a href="contact.html" class="btn-order">Inquire Now</a>
                 </div>
             </div>
-        </section>
 
-        <section class="quote-section">
-            <blockquote class="italic-quote">
-                "Every piece of art I create has a purpose and significance"
-            </blockquote>
-            <img src="purse.jpg" alt="Beaded Purse" class="full-width-image">
-        </section>
-
-        <section class="recent-work">
-            <h3>MY MOST RECENT PROJECT</h3>
-            <p class="subtitle">Work in progress tags</p>
-            <div class="recent-grid">
-                <img src="recent1.jpg" alt="Beadwork WIP">
-                <img src="recent2.jpg" alt="Beadwork Detail">
-            </div>
-        </section>
-
-        <footer class="contact-section">
-            <h2>LET'S WORK TOGETHER</h2>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <strong>Address</strong>
-                    <p>Thunder Bay, Ontario</p>
-                </div>
-                <div class="contact-item">
-                    <strong>Phone</strong>
-                    <p>807-XXX-XXXX</p>
-                </div>
-                <div class="contact-item">
-                    <strong>Email</strong>
-                    <p>ojicreations@email.com</p>
+            <div class="service-block">
+                <img src="hello kitty earrings.jpeg" alt="Custom Design" class="block-img">
+                <div class="block-content">
+                    <h3>Character & Custom</h3>
+                    <p>Traditional motifs or pop culture icons like Hello Kitty. Let's create your vision.</p>
+                    <span class="price-tag">Custom Quote</span>
+                    <a href="contact.html" class="btn-order">Inquire Now</a>
                 </div>
             </div>
-            <img src="footer-photo.jpg" alt="Contact Jady" class="footer-portrait">
-        </footer>
+
+            <div class="service-block">
+                <img src="BeadSupplies.jpg" alt="Beading Supplies" class="block-img">
+                <div class="block-content">
+                    <h3>Artist Supplies</h3>
+                    <p>Hand-picked needles, thread, and specialty beads for your own projects.</p>
+                    <span class="price-tag">Store Opening Soon</span>
+                    <a href="#" class="btn-order" style="background:#f06292; cursor:not-allowed;">Coming Soon</a>
+                </div>
+            </div>
+
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2026 OjiCreations by Jady | Beautifully Beaded</p>
+    </footer>
 
 </body>
 </html>
